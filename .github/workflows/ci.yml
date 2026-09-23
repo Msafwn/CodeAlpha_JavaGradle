@@ -1,4 +1,4 @@
-﻿name: Java Gradle CI/CD Pipeline
+name: Java Gradle CI/CD Pipeline
 
 on:
   push:
@@ -23,8 +23,5 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
 
-    - name: Build Java App with Gradle
+    - name: Build & Test with Gradle
       run: gradle build
-
-    - name: Run Application
-      run: gradle run
